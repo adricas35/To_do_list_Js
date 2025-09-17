@@ -36,7 +36,19 @@ function CreateToDoItem(textoItem){
     return item;
 }
 
+// Detectamos el click o el evento click sobre el boton con un evento de escucha sobre el boton agregar (+) 
+// Para que apartir de este evento se agregue la tarea dentro del contenedor
 
+addBtn.addEventListener('click', ()=>{
+    const textoItem= input.value.trim();
+    if (textoItem=="") {
+        alert= "No se puede crear una tarea vacia"; 
+    }else {
+        const newItem= CreateToDoItem(textoItem);
+        toDoList.appendChild(newItem);
+        input.value="";
+    }
+});
 
 
 
