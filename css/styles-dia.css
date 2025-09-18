@@ -14,7 +14,7 @@ input {
 
 body {
     font-family: "Raleway", sans-serif;
-    background: linear-gradient(#e7ea3b, rgb(233, 152, 72));
+    background: linear-gradient(#010b1b, rgb(72, 48, 52));
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
@@ -169,6 +169,5 @@ hr {
     background-color: #218838;
     color: #c82333;
     cursor: pointer;
-
 
 }
