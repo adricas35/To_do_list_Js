@@ -20,7 +20,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: left;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #global-content {
@@ -150,24 +150,29 @@ hr {
     color: #101010;
 }
 
-.footer {
-    position: fixed;
-    bottom: 20px;
-    left: 120px;
+.info {
     font-weight: bold;
 }
+.info{
+    color: #fff; 
+}
 
-/* #cont-complete-list .item-to-do p{
+.info h2{
+    color: #fff; 
+}
+
+#cont-complete-list .item-to-do p{
     text-decoration: line-through;
-} */
+} 
 
 #change-styles {
     position: absolute;
     bottom: 10px;
     right: 10px;
     padding: 20px;
-    background-color: #218838;
-    color: #c82333;
+    background-color: #fff;
+    color: #0d0d0d;
     cursor: pointer;
+    border-radius: 20px;
 
 }

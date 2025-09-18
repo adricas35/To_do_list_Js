@@ -45,7 +45,7 @@ function CreateToDoItem(textoItem) {
 addBtn.addEventListener('click', () => {
     const textoItem = input.value.trim();
     if (textoItem == "") {
-        alert = "No se puede crear una tarea vacia";
+        alert("No se puede crear una tarea vacia");
     }
     else {
         const newItem = CreateToDoItem(textoItem);
@@ -54,6 +54,16 @@ addBtn.addEventListener('click', () => {
         input.value = "";
     }
 });
+
+// Detectar la tecla Enter en el input para agregar tareas
+input.addEventListener('keydown', (e) => {
+    if (e.key === "Enter") {
+        e.preventDefault();
+        addBtn.click();
+    }
+});
+
+
 
 
 
@@ -65,7 +75,7 @@ function eventsToItem(item) {
     // completar la tarea
     checkbox.addEventListener('change', () => {
         if (checkbox.checked) {
-            copletedList.appendChild(item);
+            completedList.appendChild(item);
         }
         else {
             toDoList.appendChild(item);
@@ -84,15 +94,17 @@ btnStyles.addEventListener('click', () => {
 
     if (linkCss.getAttribute('href') == "css/styles.css") {
         linkCss.setAttribute("href", "css/styles-dia.css");
-        btnStyles.textContent = "modo dia"
+        btnStyles.textContent = "Modo día"
     }
     else {
-       
+
         linkCss.setAttribute("href", "css/styles.css");
-        btnStyles.textContent = "modo noche"
+        btnStyles.textContent = "Modo noche"
     }
 
 })
+
+
 
 
 
