@@ -36,6 +36,7 @@ function CreateToDoItem(textoItem){
     return item;
 }
 
+
 // Detectamos el click o el evento click sobre el boton con un evento de escucha sobre el boton agregar (+) 
 // Para que apartir de este evento se agregue la tarea dentro del contenedor
 
